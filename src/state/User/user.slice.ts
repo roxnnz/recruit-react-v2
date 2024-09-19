@@ -9,7 +9,7 @@ export interface UserState {
 const initialUserState: UserState = {
   firstName: "Leo",
   lastName: "LI",
-  email: "xin.leo.li@gmail.com",
+  email: "user.test@gmail.com",
 };
 
 const userSlice = createSlice({
