@@ -45,3 +45,7 @@ You can use any tools, plugins and technologies as required for you to complete 
 # Submitting Assignment
 
 Feel free to create a public GitHub repo or private GitHub repo where it's accessible to the assessor
+
+
+## Run application 
+`docker run -d -p 3000:80 roxnz/recruit-react-v2:latest`
