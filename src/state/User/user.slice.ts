@@ -1,23 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export interface UserState {
-    firstName: string;
-    lastName: string;
-    email: string;
-};
+  firstName: string;
+  lastName: string;
+  email: string;
+}
 
 const initialUserState: UserState = {
-    firstName: 'Leo',
-    lastName: 'LI',
-    email: 'xin.leo.li@gmail.com',
+  firstName: "Leo",
+  lastName: "LI",
+  email: "xin.leo.li@gmail.com",
 };
 
-const userSlice = createSlice ({
-    name: 'user',
-    initialState: initialUserState,
-    reducers: {
-        updateCardDetail: (state, action) => {}
-    }
+const userSlice = createSlice({
+  name: "user",
+  initialState: initialUserState,
+  reducers: {
+    updateCardDetail: (state, action) => {},
+  },
 });
 
 export const { updateCardDetail } = userSlice.actions;

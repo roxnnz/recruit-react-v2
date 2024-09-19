@@ -8,7 +8,7 @@ module.exports = (env, argv) => {
     entry: {
       index: "./src/index.tsx",
     },
-    mode: 'development',
+    mode: "development",
     devtool: "source-map",
     resolve: {
       extensions: [".js", ".ts", ".tsx", ".jsx"],
