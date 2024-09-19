@@ -1,24 +1,24 @@
 import React, { useState } from "react"
 import MenuIcon from "../icons/Menu"
 import ArrowLeftIcon from "../icons/ArrowLeft"
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+import * as styles from './TopNavBar.module.scss'
 
 export const TopNavBar = () => {
-    const param = useParams();
     const [ menuIsOpenState, setManuIsOpenState ] = useState(false);
     return (
-        <div className="navbar">
+        <div className={styles.navbar}>
             { menuIsOpenState ? 
-                <div onClick={() => setManuIsOpenState(false)}>
+                <div className={styles.menuIcon} onClick={() => setManuIsOpenState(false)}>
                     <ArrowLeftIcon />
                 </div> : 
-                <div onClick={() => setManuIsOpenState(true)}>
+                <div className={styles.menuIcon} onClick={() => setManuIsOpenState(true)}>
                     <MenuIcon />
                 </div> }
             
             <div>
                 { menuIsOpenState ? 
-                    <ul className="navbar-links">
+                    <ul className={styles.navbarLinks}>
                         <li><Link to={'/'}>Profile</Link></li>
                         <li><Link to={'/cards'}>Cards</Link></li>
                         <li><Link to={'/new-card'}>Card Registeration</Link></li>

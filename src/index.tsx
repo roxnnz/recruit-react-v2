@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { App } from "./page/cardRegister/app";
+import { RegisterCardPage } from "./page/cardRegister/RegisterCardPage";
 import { Provider } from "react-redux";
 import { store } from './state/store'
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -15,17 +15,12 @@ const router = createBrowserRouter([
     },
     {
         path: '/new-card',
-        element: <App/>
+        element: <RegisterCardPage/>
     },
     {
         path: '/cards',
         element: <CardsPage/>
-    },
-    {
-        path: '/card:cardNumber',
-        element: <App/>
-    },
-
+    }
 ])
 const root = createRoot(document.getElementById("root") as HTMLElement);
 

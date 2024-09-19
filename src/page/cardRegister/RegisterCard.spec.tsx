@@ -1,11 +1,11 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { App } from "./app";
+import { RegisterCardPage } from "./RegisterCardPage";
 
 describe("Dummy test", () => {
   it("should display welcome text", () => {
-    render(<App />);
+    render(<RegisterCardPage />);
     const heading = screen.queryByRole("heading", {
       level: 1,
     });

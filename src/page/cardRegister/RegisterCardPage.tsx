@@ -3,7 +3,7 @@ import { insertCardDetail } from "../../state/Card/card.slice";
 import { Card } from "../../component/input/Card";
 import { TopNavBar } from "../../component/nav/TopNavBar";
 
-export const App = () => {
+export const RegisterCardPage = () => {
   return (
     <>
       <TopNavBar />
