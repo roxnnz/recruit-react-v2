@@ -1,0 +1,106 @@
+// Define breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+
+    &:focus {
+      border-color: #007bff;
+    }
+  }
+
+  button {
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+// Media queries for responsiveness
+@media screen and (max-width: $desktop) {
+  form {
+    max-width: 350px;
+  }
+
+  label {
+    font-size: 0.95rem;
+  }
+
+  input {
+    font-size: 0.95rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  form {
+    max-width: 300px;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  form {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  label {
+    font-size: 0.85rem;
+  }
+
+  input {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
